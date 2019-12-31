@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+li {
+    display: inline-block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.contact-email::before,
+.contact-phone::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-family: "icomoon";
+    font-size: 14px;
+}

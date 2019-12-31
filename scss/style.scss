@@ -1,6 +1,103 @@
 @import "libs";
+@import "fonts";
 @import "global";
 
+
+.pre-header {
+    background-color: #2f3f54;
+    min-height: 50px;
+
+    &__inner {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact {
+        display: flex;
+        color: #7b828d;
+
+        div+div {
+            margin-left: 45px;
+        }
+
+        &-email {
+            padding-left: 25px;
+            position: relative;
+
+            &::before {
+                content: '\f003';
+            }
+        }
+
+        &-phone {
+            padding-left: 25px;
+            position: relative;
+
+            &::before {
+                content: '\f095';
+            }
+
+        }
+
+    }
+
+    .user-nav {
+        color: #6e7988;
+
+
+        .localization {
+            padding-left: 25px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                background-image: url('../img/russia.svg');
+                width: 16px;
+                height: 16px;
+                color: #fff;
+            }
+        }
+
+        &__item {
+            a {
+                color: #6e7988;
+            }
+        }
+
+
+        li+li {
+            margin-left: 20px;
+        }
+    }
+}
+
+.header {
+    min-height: 85px;
+
+    &__inner {
+        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu {
+
+        li+li {
+            margin-left: 40px;
+        }
+
+        li a {
+            color: #2f3f54;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
 
 
 
