@@ -99,6 +99,123 @@
     }
 }
 
+.hosting {
+    min-height: 835px;
+    background-image: url('../img/bg-pattern.png');
+
+    &__inner {
+        position: relative;
+    }
+
+    &__info {
+        color: #fff;
+        padding-top: 165px;
+
+
+        &-title {
+            font-size: 48px;
+            line-height: 52px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            margin-bottom: 25px;
+
+        }
+
+        &-price {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        &-menu {
+            margin: 40px 0 50px;
+            font-weight: 700;
+
+            li {
+                display: block;
+                padding-left: 25px;
+                position: relative;
+
+                &::before {
+                    content: '\f046';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-family: "icomoon";
+                    color: #000;
+                }
+            }
+
+            li a {
+                color: #fff;
+                font-size: 15px;
+                line-height: 27px;
+                font-weight: 700;
+
+            }
+        }
+
+        &-btn {
+            color: #fff;
+            padding: 15px 45px;
+            display: inline-block;
+            border: 3px solid #fff;
+            border-radius: 24px;
+            background-color: #267ae9;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+
+        }
+    }
+
+    .imgs-wrapper {
+        position: absolute;
+        right: 5%;
+        top: 37%;
+
+        .large-server {
+            margin-left: 30px;
+        }
+
+        .circle__info {
+            width: 229px;
+            height: 229px;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            right: -137px;
+            top: -68px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &-price {
+                font-size: 54px;
+                font-weight: 700;
+
+                .ruble {
+                    font-size: 32px;
+                }
+            }
+
+            &-title {
+                text-align: left;
+                width: 135px;
+
+            }
+
+            &-date {
+                text-align: right;
+                width: 115px;
+            }
+        }
+
+    }
+
+}
+
 
 
 
