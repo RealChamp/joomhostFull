@@ -1,5 +1,6 @@
 @import "libs";
 @import "fonts";
+@import "vars";
 @import "global";
 
 
@@ -194,6 +195,7 @@
             &-price {
                 font-size: 54px;
                 font-weight: 700;
+                margin-top: 10px;
 
                 .ruble {
                     font-size: 32px;
@@ -228,6 +230,7 @@
     box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
     border-radius: 2px;
     margin-bottom: 60px;
+
 
     &__form {
         display: flex;
@@ -280,6 +283,116 @@
             }
 
         }
+    }
+}
+
+.services {
+    margin-top: 290px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__block {
+        display: flex;
+
+        .small-block {
+            max-width: 105px;
+            width: 100%;
+            min-height: 785px;
+            background-color: #fff;
+            box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+            position: relative;
+
+            &__first,
+            &__second,
+            &__third {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 42px;
+                height: 42px;
+
+                top: 293px;
+            }
+
+            &__second {
+                top: 503px;
+
+
+            }
+
+            &__third {
+                top: 715px;
+
+
+            }
+
+        }
+
+        .large-block {
+            max-width: 555px;
+            width: 100%;
+            min-height: 785px;
+            background-color: #267ae9;
+            color: #fff;
+
+
+
+            &__title {
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 50px;
+                margin-left: 40px;
+                margin-top: 80px;
+            }
+
+            &__item {
+                margin-top: 90px;
+                margin-left: 40px;
+                max-width: 355px;
+
+
+                &+.large-block__item {
+                    margin-top: 60px;
+                }
+
+                &-title {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 26px;
+                    margin-bottom: 30px;
+
+                }
+
+            }
+
+            &__item:last-of-type {
+                .large-block__item-text {
+                    margin-bottom: 65px;
+                }
+            }
+
+        }
+
+        margin-bottom: 130px;
+    }
+
+    &__info {
+        max-width: 525px;
+        margin-top: 50px;
+        margin-left: 60px;
+
+        &-title {
+            font-family: "Roboto", sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 46px;
+            margin-bottom: 35px;
+        }
+
+
     }
 }
 
