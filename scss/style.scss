@@ -125,6 +125,10 @@
             margin-bottom: 10px;
             font-size: 16px;
             font-weight: 700;
+
+            .ruble {
+                font-size: 0.9em;
+            }
         }
 
         &-menu {
@@ -196,9 +200,7 @@
                 font-weight: 700;
                 margin-top: 10px;
 
-                .ruble {
-                    font-size: 32px;
-                }
+                .ruble {}
             }
 
             &-title {
@@ -341,7 +343,7 @@
             &__title {
                 font-family: "Roboto", sans-serif;
                 font-weight: 700;
-                font-size: 40px;
+                font-size: 38px;
                 line-height: 50px;
                 margin-left: 40px;
                 margin-top: 80px;
@@ -452,12 +454,12 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
-                max-width: 555px;
+
 
 
                 li {
                     font-family: "Roboto", sans-serif;
-                    font-size: 20px;
+                    font-size: 16px;
                     line-height: 52px;
                     display: inline-block;
                     padding-left: 40px;
@@ -483,6 +485,10 @@
                 font-size: 34px;
                 line-height: 54px;
                 margin-top: 60px;
+
+                .ruble {
+                    font-size: 0.65em;
+                }
             }
         }
 
@@ -491,6 +497,133 @@
         }
 
     }
+}
+
+.pricing {
+    padding: 130px 0 180px;
+
+    &__inner {
+        text-align: center;
+
+        .pricing-title {
+            font-family: "Roboto", sans-serif;
+            font-size: 36px;
+            line-height: 48px;
+            margin-bottom: 40px;
+        }
+
+        .pricing-text {
+            margin: 0 auto;
+            max-width: 615px;
+            padding: 0 15px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+
+        .pricing__item {
+            min-height: 660px;
+            max-width: 360px;
+            box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            float: left;
+            margin-top: 120px;
+            padding-top: 110px;
+            position: relative;
+            overflow: hidden;
+
+            &-price {
+                position: absolute;
+                color: #fff;
+                width: 280px;
+                height: 365px;
+                border-radius: 50%;
+                background-color: #267ae9;
+                top: -275px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 40px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-size: 28px;
+
+                span {
+                    font-size: 0.75em;
+                    margin-bottom: -3px;
+                }
+            }
+
+            &-inner {
+                padding: 0 45px;
+
+            }
+
+
+            &-img {
+                display: flex;
+
+                align-items: center;
+
+            }
+
+            &-title {
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+                margin: 35px 0 25px;
+            }
+
+
+
+            &-list {
+                margin-top: 50px;
+
+
+                li {
+                    display: block;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 16px;
+                    color: #4a6385;
+                    padding-left: 35px;
+                    position: relative;
+
+                    &::before {
+                        content: '\f00c';
+                        font-family: "icomoon";
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+
+                li+li {
+                    margin-top: 20px;
+                }
+            }
+
+            &-btn {
+                display: block;
+                width: 100%;
+                height: 60px;
+                text-align: center;
+                background-color: #267ae9;
+                color: #fff;
+                border: none;
+                padding: 17px 0;
+                margin-top: 70px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-size: 17px;
+
+            }
+        }
+    }
+
+
 }
 
 
