@@ -724,7 +724,16 @@
     }
 }
 
-// slick settings 
+.partners {
+    &__wrapper {
+        display: flex;
+        height: 275px;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
 
 
 
