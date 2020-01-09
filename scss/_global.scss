@@ -28,9 +28,24 @@ a {
     text-decoration: none;
 }
 
+.title {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+}
+
 .ruble {
     font-size: 0.6em;
 }
+
+.pt-120 {
+    padding-top: 120px;
+}
+
+.pb-120 {
+    padding-bottom: 120px;
+}
+
 
 .container {
     max-width: 1170px;

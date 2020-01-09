@@ -1,3 +1,4 @@
+@import "slick";
 @import "libs";
 @import "fonts";
 @import "global";
@@ -18,8 +19,9 @@
         display: flex;
         color: #7b828d;
 
-        div+div {
+        a {
             margin-left: 45px;
+            color: #7b828d;
         }
 
         &-email {
@@ -500,15 +502,12 @@
 }
 
 .pricing {
-    padding: 130px 0 180px;
+    padding: 130px 0 150px;
 
     &__inner {
         text-align: center;
 
         .pricing-title {
-            font-family: "Roboto", sans-serif;
-            font-size: 36px;
-            line-height: 48px;
             margin-bottom: 40px;
         }
 
@@ -516,6 +515,7 @@
             margin: 0 auto;
             max-width: 615px;
             padding: 0 15px;
+            margin-top: 45px;
         }
     }
 
@@ -583,6 +583,11 @@
             &-list {
                 margin-top: 50px;
 
+                .big {
+                    font-size: 38px;
+                    vertical-align: bottom;
+                }
+
 
                 li {
                     display: block;
@@ -622,9 +627,105 @@
             }
         }
     }
-
-
 }
+
+.reviews {
+    text-align: center;
+    background-color: #fafafa;
+
+    &__items {
+
+        .slick-list {
+            margin: 0 -50px;
+
+
+        }
+
+        .slick-dots {
+            margin-top: 40px;
+
+
+            .slick-active button {
+                background-color: #fff;
+
+            }
+
+            li {
+                margin: 0 8px;
+                font-size: 0;
+
+
+
+                button {
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #267ae9;
+                    padding: 0;
+                    border-radius: 50%;
+                    background-color: #267ae9;
+                    outline: none;
+                }
+            }
+        }
+
+
+
+        .review__item {
+            display: flex;
+            max-width: 525px;
+            width: 100%;
+            margin: 0 50px;
+            padding-bottom: 70px;
+
+
+            img {
+                border-radius: 50%;
+            }
+
+            &-container {
+                max-width: 285px;
+            }
+
+            .blue-block {
+                max-width: 195px;
+                width: 100%;
+                min-height: 350px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+
+
+
+
+            }
+
+            .white-block {
+                max-width: 330px;
+                width: 100%;
+                min-height: 350px;
+                display: flex;
+                align-items: center;
+                text-align: left;
+                padding: 0 20px;
+                background-color: #fff;
+                font-size: 15px;
+                box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+
+
+
+
+                .review__item-author {
+                    margin-top: 30px;
+                }
+
+            }
+        }
+    }
+}
+
+// slick settings 
+
 
 
 
