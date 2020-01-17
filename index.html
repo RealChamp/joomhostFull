@@ -16,7 +16,8 @@
     <div class="pre-header">
         <div class="container">
             <div class="pre-header__inner">
-                <div class="contact">
+
+                <div class="contact wow fadeIn">
                     <div class="contact-text">
                         Есть вопросы?
                     </div>
@@ -28,7 +29,7 @@
                     </a>
                 </div>
 
-                <div class="user-nav">
+                <div class="user-nav wow fadeIn">
                     <ul class="user-nav__menu">
                         <li class="user-nav__item localization">Русский</li>
                         <li class="user-nav__item"><a href="#">Мой Профиль</a></li>
@@ -41,8 +42,26 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#"><img src="img/logo.png" alt="logotype" class="logo"></a>
-                <ul class="header__menu">
+                <a href="#">
+                    <picture>
+                        <source class="logo" srcset="img/mobile-logo.png" media="(max-width: 915px)">
+                        <img src="img/logo.png" alt="logotype" class="logo wow fadeIn">
+                    </picture>
+                </a>
+
+                <div id="user-burger-menu" class="user-burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="header__menu wow fadeIn">
                     <li class="header__menu-item"><a href="#">Главная</a></li>
                     <li class="header__menu-item"><a href="#">О нас</a></li>
                     <li class="header__menu-item"><a href="#">Плагины</a></li>
@@ -58,13 +77,13 @@
     <section class="hosting">
         <div class="container">
             <div class="hosting__inner">
-                <div class="hosting__info">
+                <div class="hosting__info wow fadeIn">
                     <span class="small-text">Простой – Легко использолвать – 10x быстрее!</span>
                     <div class="hosting__info-title">
                         Лучший Веб-Хостинг
                     </div>
                     <div class="hosting__info-price">
-                        Начиная с 500<span class="ruble">&#8381;</span> 500<span class="ruble">&#8381;</span>/месяц*
+                        Начиная с 500<span class="ruble">₽</span> 500<span class="ruble">₽</span>/месяц*
                     </div>
                     <span class="small-text">
                         Войдите на свой сайт, чтобы узнать, как мы можем помочь вашему бизнесу расти ... </span>
@@ -81,15 +100,15 @@
                         денег</span>
                 </div>
                 <div class="imgs-wrapper">
-                    <img src="img/small-server.png" alt="server-picture">
+                    <img class="small-server" src="img/small-server.png" alt="server-picture">
                     <img class="large-server" src="img/large-server.png" alt="server-picture">
-                    <div class="circle__info">
+                    <div class="circle__info wow tada">
 
                         <div class="circle__info-title">
                             Начиная с
                         </div>
                         <div class="circle__info-price">
-                            500<span class="ruble">&#8381;</span>
+                            500<span class="ruble">₽</span>
                         </div>
                         <div class="circle__info-date">
                             /месяц
@@ -99,27 +118,30 @@
                 </div>
             </div>
         </div>
-        <div class="search">
-            <div class="contanier">
-                <form action="" class="search__form">
-                    <input class="search__form-input" type="text" placeholder="Найдите ваше идеальное доменное имя">
-                    <button class="search__form-btn" type="submit">Искать Домен</button>
-                </form>
+    </section>
 
-                <div class="search__info">
-                    <ul class="search__info-list">
-                        <li><a href="#">.<span class="blue-text">com $12.17</a></span></li>
-                        <li><a href="#">.<span style="color: #28aa15;">asia $5.17</a></span></li>
-                        <li><a href="#">.<span class="coral-text">online $5.17</a></span></li>
-                        <li><a href="#">.<span class="blue-text">me $3.49</a></span></li>
-                        <li><a href="#">.<span class="light__green-text">cn $6.99</a></span></li>
-                        <li>*Все цены за год</li>
-                    </ul>
-                </div>
+    <div class="search">
+        <div class="contanier">
+            <form action="" class="search__form">
+                <input class="search__form-input" type="text" placeholder="Найдите ваше идеальное доменное имя">
+                <button class="search__form-btn " type="submit">Искать Домен</button>
+            </form>
+
+            <div class="search__info">
+                <ul class="search__info-list">
+                    <li><a href="#">.<span class="blue-text">com $12.17</a></span></li>
+                    <li><a href="#">.<span style="color: #28aa15;">asia $5.17</a></span></li>
+                    <li><a href="#">.<span class="coral-text">online $5.17</a></span></li>
+                    <li><a href="#">.<span class="blue-text">me $3.49</a></span></li>
+                    <li><a href="#">.<span class="light__green-text">cn $6.99</a></span></li>
+                    <li>*Все цены за год</li>
+                </ul>
             </div>
         </div>
-    </section>
-    <section class="services">
+    </div>
+
+
+    <section class="services wow fadeIn">
         <div class="container">
             <div class="services__inner">
                 <div class="services__block">
@@ -180,10 +202,11 @@
             </div>
         </div>
     </section>
+
     <section class="features">
         <div class="container">
 
-            <div class="features__block">
+            <div class="features__block wow fadeIn">
                 <div class="feature__item">
                     <div class="feature__item-img">
                         <img src="img/traffic.png" alt="traffic">
@@ -212,9 +235,10 @@
                 </div>
             </div>
 
+
             <div class="features__info">
 
-                <div class="features__info-inner">
+                <div class="features__info-inner wow fadeIn">
 
                     <div class="features__info-title">
                         <span class="blue-text">Приступим!</span> Сегодняшние Предложения
@@ -237,16 +261,18 @@
                         <li>Гарантия безотказной работы</li>
                     </ul>
                     <div class="feature__info-price">
-                        Начинается с <span class="blue-text">500<span class="ruble">&#8381;</span></span>/месяц
+                        Начинается с <span class="blue-text">500<span class="ruble">₽</span></span>/месяц
                     </div>
                 </div>
 
-                <img class="features__info-img" src="img/features-bg.png" alt="background of features section">
+                <img class="features__info-img wow zoomIn" src="img/features-bg.png"
+                    alt="background of features section">
 
             </div>
         </div>
     </section>
-    <section class="pricing">
+
+    <section class="pricing wow fadeIn">
         <div class="container">
 
             <div class="pricing__inner">
@@ -266,9 +292,11 @@
 
                 <div class="pricing__item">
                     <div class="pricing__item-price">
-                        2000<span>&#8381;</span>/год
+                        2000<span>₽</span>/год
                     </div>
-                    <img src="img/pricing-personal.png" alt="pricing-personal" class="pricing__item-img">
+                    <div class="img-wrap">
+                        <img src="img/pricing-personal.png" alt="pricing-personal" class="pricing__item-img">
+                    </div>
                     <div class="pricing__item-inner">
                         <div class="pricing__item-title">
                             <span class="blue-text">Стартовый</span>
@@ -287,12 +315,14 @@
 
                 <div class="pricing__item">
                     <div class="pricing__item-price">
-                        4000<span>&#8381;</span>/год
+                        4000<span>₽</span>/год
                     </div>
-                    <img src="img/pricing-personal.png" alt="pricing-personal" class="pricing__item-img">
+                    <div class="img-wrap">
+                        <img src="img/pricing-enterprise.png" alt="pricing-personal" class="pricing__item-img">
+                    </div>
                     <div class="pricing__item-inner">
                         <div class="pricing__item-title">
-                            <span class="blue-text">Профессиональный</span>
+                            <span class="blue-text">Продвинутый</span>
                         </div>
                         <div class="pricing__item-text">
                             Такой тип больше подойдет тем, кто уже знает свое дело и плотно засел в своей нише.
@@ -308,9 +338,11 @@
 
                 <div class="pricing__item">
                     <div class="pricing__item-price">
-                        5500<span>&#8381;</span>/год
+                        5500<span>₽</span>/год
                     </div>
-                    <img src="img/pricing-personal.png" alt="pricing-personal" class="pricing__item-img">
+                    <div class="img-wrap">
+                        <img src="img/personal-business.png" alt="pricing-personal" class="pricing__item-img">
+                    </div>
                     <div class="pricing__item-inner">
                         <div class="pricing__item-title">
                             <span class="blue-text">Компания</span>
@@ -331,127 +363,145 @@
             </div>
         </div>
     </section>
+
     <section class="reviews pt-120 pb-120">
         <div class="container">
-            <div class="title pb-120">Что <span class="blue-text">Люди</span> Говорят О Нас</div>
+            <div class="title pb-120 wow fadeIn">Что <span class="blue-text">Люди</span> Говорят О Нас</div>
 
-            <div class="reviews__items">
-
+            <div class="reviews__items wow lightSpeedIn">
                 <div class="review__item">
-                    <div style="background-color: #267ae9;" class="blue-block">
-                        <img src="img/review1.png" alt="reviewPerson">
-                    </div>
+                    <div class="reviews__box">
+                        <div style="background-color: #267ae9;" class="blue-block">
+                            <img src="img/review1.png" alt="reviewPerson">
+                        </div>
 
-                    <div class="white-block">
-                        <div class="review__item-container">
-                            <div class="review__item-text">
-                                В России один из лучших недорогих хостингов,с большим функционалом,за небольшую сумму.
-                                Имеет
-                                отличный начальный тариф,в отличии от других веб хостингов. В общем один из лучших
-                                хостингов.
-                            </div>
-                            <div class="review__item-author">
-                                <span class="blue-text">Дмитрий Ракушкин</span> - Менеджер @ Москва
+                        <div class="white-block">
+                            <div class="review__item-container">
+                                <div class="review__item-text">
+                                    В России один из лучших недорогих хостингов,с большим функционалом,за небольшую
+                                    сумму.
+                                    Имеет
+                                    отличный начальный тариф,в отличии от других веб хостингов. В общем один из лучших
+                                    хостингов.
+                                </div>
+                                <div class="review__item-author">
+                                    <span class="blue-text">Дмитрий Ракушкин</span> - Менеджер @ Москва
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="review__item">
+                    <div class="reviews__box">
+                        <div style="background-color: #267ae9;" class="blue-block">
+                            <img src="img/review2.png" alt="reviewPerson">
+                        </div>
 
-                    <div style="background-color: #267ae9;" class="blue-block">
-                        <img src="img/review2.png" alt="reviewPerson">
-                    </div>
-
-                    <div class="white-block">
-                        <div class="review__item-container">
-                            <div class="review__item-text">
-                                Один из самых лучших хостинг провайдеров, которым я и моя компания пользовались, есть
-                                все что необходимо для работы. Лучшая тех поддержка, которую я встречал. Вместе с ними
-                                решили множество проблем.
-                            </div>
-                            <div class="review__item-author">
-                                <span class="blue-text">Алексей Амбицин</span> - Менеджер @ Казань
+                        <div class="white-block">
+                            <div class="review__item-container">
+                                <div class="review__item-text">
+                                    Один из самых лучших хостинг провайдеров, которым я и моя компания пользовались,
+                                    есть
+                                    все что необходимо для работы. Лучшая тех поддержка, которую я встречал. Вместе с
+                                    ними
+                                    решили множество проблем.
+                                </div>
+                                <div class="review__item-author">
+                                    <span class="blue-text">Алексей Амбицин</span> - Менеджер @ Казань
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="review__item">
-                    <div style="background-color: #267ae9;" class="blue-block">
-                        <img src="img/review1.png" alt="reviewPerson">
-                    </div>
+                    <div class="reviews__box">
+                        <div style="background-color: #267ae9;" class="blue-block">
+                            <img src="img/review1.png" alt="reviewPerson">
+                        </div>
 
-                    <div class="white-block">
-                        <div class="review__item-container">
-                            <div class="review__item-text">
-                                В России один из лучших недорогих хостингов,с большим функционалом,за небольшую сумму.
-                                Имеет
-                                отличный начальный тариф,в отличии от других веб хостингов. В общем один из лучших
-                                хостингов.
-                            </div>
-                            <div class="review__item-author">
-                                <span class="blue-text">Дмитрий Ракушкин</span> - Менеджер @ Москва
+                        <div class="white-block">
+                            <div class="review__item-container">
+                                <div class="review__item-text">
+                                    В России один из лучших недорогих хостингов,с большим функционалом,за небольшую
+                                    сумму.
+                                    Имеет
+                                    отличный начальный тариф,в отличии от других веб хостингов. В общем один из лучших
+                                    хостингов.
+                                </div>
+                                <div class="review__item-author">
+                                    <span class="blue-text">Дмитрий Ракушкин</span> - Менеджер @ Москва
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="review__item">
+                    <div class="reviews__box">
+                        <div style="background-color: #267ae9;" class="blue-block">
+                            <img src="img/review2.png" alt="reviewPerson">
+                        </div>
 
-                    <div style="background-color: #267ae9;" class="blue-block">
-                        <img src="img/review2.png" alt="reviewPerson">
-                    </div>
-
-                    <div class="white-block">
-                        <div class="review__item-container">
-                            <div class="review__item-text">
-                                Один из самых лучших хостинг провайдеров, которым я и моя компания пользовались, есть
-                                все что необходимо для работы. Лучшая тех поддержка, которую я встречал. Вместе с ними
-                                решили множество проблем.
-                            </div>
-                            <div class="review__item-author">
-                                <span class="blue-text">Алексей Амбицин</span> - Менеджер @ Казань
+                        <div class="white-block">
+                            <div class="review__item-container">
+                                <div class="review__item-text">
+                                    Один из самых лучших хостинг провайдеров, которым я и моя компания пользовались,
+                                    есть
+                                    все что необходимо для работы. Лучшая тех поддержка, которую я встречал. Вместе с
+                                    ними
+                                    решили множество проблем.
+                                </div>
+                                <div class="review__item-author">
+                                    <span class="blue-text">Алексей Амбицин</span> - Менеджер @ Казань
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="review__item">
-                    <div style="background-color: #267ae9;" class="blue-block">
-                        <img src="img/review1.png" alt="reviewPerson">
-                    </div>
+                    <div class="reviews__box">
+                        <div style="background-color: #267ae9;" class="blue-block">
+                            <img src="img/review1.png" alt="reviewPerson">
+                        </div>
 
-                    <div class="white-block">
-                        <div class="review__item-container">
-                            <div class="review__item-text">
-                                В России один из лучших недорогих хостингов,с большим функционалом,за небольшую сумму.
-                                Имеет
-                                отличный начальный тариф,в отличии от других веб хостингов. В общем один из лучших
-                                хостингов.
-                            </div>
-                            <div class="review__item-author">
-                                <span class="blue-text">Дмитрий Ракушкин</span> - Менеджер @ Москва
+                        <div class="white-block">
+                            <div class="review__item-container">
+                                <div class="review__item-text">
+                                    В России один из лучших недорогих хостингов,с большим функционалом,за небольшую
+                                    сумму.
+                                    Имеет
+                                    отличный начальный тариф,в отличии от других веб хостингов. В общем один из лучших
+                                    хостингов.
+                                </div>
+                                <div class="review__item-author">
+                                    <span class="blue-text">Дмитрий Ракушкин</span> - Менеджер @ Москва
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="review__item">
+                    <div class="reviews__box">
+                        <div style="background-color: #267ae9;" class="blue-block">
+                            <img src="img/review2.png" alt="reviewPerson">
+                        </div>
 
-                    <div style="background-color: #267ae9;" class="blue-block">
-                        <img src="img/review2.png" alt="reviewPerson">
-                    </div>
-
-                    <div class="white-block">
-                        <div class="review__item-container">
-                            <div class="review__item-text">
-                                Один из самых лучших хостинг провайдеров, которым я и моя компания пользовались, есть
-                                все что необходимо для работы. Лучшая тех поддержка, которую я встречал. Вместе с ними
-                                решили множество проблем.
-                            </div>
-                            <div class="review__item-author">
-                                <span class="blue-text">Алексей Амбицин</span> - Менеджер @ Казань
+                        <div class="white-block">
+                            <div class="review__item-container">
+                                <div class="review__item-text">
+                                    Один из самых лучших хостинг провайдеров, которым я и моя компания пользовались,
+                                    есть
+                                    все что необходимо для работы. Лучшая тех поддержка, которую я встречал. Вместе с
+                                    ними
+                                    решили множество проблем.
+                                </div>
+                                <div class="review__item-author">
+                                    <span class="blue-text">Алексей Амбицин</span> - Менеджер @ Казань
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -459,20 +509,142 @@
             </div>
         </div>
     </section>
-    <section class="partners">
+
+    <section class="partners wow fadeIn">
         <div class="container">
             <div class="partners__wrapper">
-                <img src="img/jquery-logo.png" alt="jquery-logo">
-                <img src="img/teespring-logo.png" alt="teespring-logo">
-                <img src="img/hp-logo.png" alt="hp-logo">
-                <img src="img/salesforce-logo.png" alt="salesforce-logo">
-                <img src="img/mediamath-logo.png" alt="mediamath-logo">
-                <img src="img/ericsson-logo,png.png" alt="ericsson-logo">
+                <div class="img_wrap">
+                    <img src="img/jquery-logo.png" alt="jquery-logo">
+                </div>
+                <div class="img_wrap">
+                    <img src="img/teespring-logo.png" alt="teespring-logo">
+                </div>
+                <div class="img_wrap">
+                    <img src="img/hp-logo.png" alt="hp-logo">
+                </div>
+                <div class="img_wrap">
+                    <img src="img/salesforce-logo.png" alt="salesforce-logo">
+                </div>
+                <div class="img_wrap">
+                    <img src="img/mediamath-logo.png" alt="mediamath-logo">
+                </div>
+                <div class="img_wrap">
+                    <img src="img/ericsson-logo,png.png" alt="ericsson-logo">
+                </div>
             </div>
         </div>
     </section>
 
+    <footer class="footer wow fadeIn">
+        <div class="container">
+            <div class="footer__wrapper">
+
+                <div class="footer__item">
+                    <img src="img/footer-logo.png" alt="footer-logo" class="footer__item-logo">
+                    <div class="footer__item-text">
+                        Hosting Website Builder - это большая библиотека готовых веб-элементов, которые помогут вам
+                        создать сайт за считанные минуты.
+                    </div>
+                    <div class="footer__item-formtext">
+                        Подпишитесь на нашу рассылку, чтобы получать последние обновления и предложения.
+                    </div>
+                    <form class="footer__item-subscribe">
+                        <input class="email-input" type="email" placeholder="Введите почту">
+                        <button type="submit"></button>
+                    </form>
+                    <div>
+                        Мы уважаем вашу конфиденциальность
+                    </div>
+                </div>
+
+                <div class="footer__menu">
+                    <div class="footer__title">
+                        База знаний
+                    </div>
+                    <ul class="footer__item-menu">
+                        <li><a href="#">Уроки</a></li>
+                        <li><a href="#">Платим за статьи</a></li>
+                        <li><a href="#">Вопросы</a></li>
+                        <li><a href="#">Встречи</a></li>
+                        <li><a href="#">Реферальная система</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#">Демо Droplets</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__menu">
+                    <div class="footer__title">
+                        Компания
+                    </div>
+                    <ul class="footer__item-menu">
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Связаться</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Партнерские условия</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__form">
+                    <div class="footer__title">
+                        Быстро связаться
+                    </div>
+
+                    <form class="footer__form-form">
+                        <div class="form__wrapper">
+                            <input class="footer__form-form-input" type="text" placeholder="Имя">
+                            <input class="footer__form-form-input" type="email" placeholder="Эл. почта">
+                            <input class="footer__form-form-input" type="text" placeholder="Тема">
+                            <textarea class="textarea-message" placeholder="Сообщение"></textarea>
+                        </div>
+
+                        <button class="footer__form-form-btn" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sub-footer wow fadeIn">
+        <div class="container">
+            <div class="sub-footer__inner">
+                <div class="copyright-text">
+                    &copy; 2002-2020 themexpert Inc. Все права защищены.
+                </div>
+
+
+                <ul class="footer-nav">
+                    <li><a href="#">События</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="#">Совместимость</a></li>
+                    <li><a href="#">Образование</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub2-footer wow fadeIn">
+        <div class="container">
+            <div class="sub2-footer__inner">
+
+                <div class="other-copyright">
+                    <p>Все остальные торговые марки и авторские права являются собственностью соответствующих
+                        владельцев.</p>
+
+                    <img src="img/accredited.png" alt="accredited">
+                </div>
+
+                <div class="payment-methods">
+                    <p>Способы оплаты</p>
+                    <img src="img/payment.png" alt="payment options">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="js/wow.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
